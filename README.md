@@ -1,4 +1,4 @@
-TODO
 
+task-dashboard-ozgur-okt.vercel.app
 
-check stats display vlaue in case of equality
+README will be updated soon with detailed info.
