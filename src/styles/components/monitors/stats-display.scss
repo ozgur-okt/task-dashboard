@@ -1,0 +1,44 @@
+@import '../../theme';
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 33%;
+
+  h5 {
+    color: #e0e0e0;
+    text-align: center;
+    margin: 0;
+    font-size: $font-size-small;
+  }
+  
+  h1 {
+    text-align: center;
+    margin: 0;
+    font-size: $font-size-large;
+  }
+  
+  p {
+    margin: 0;
+    font-size: $font-size-small;
+  }
+}
+
+
+
+.change {
+  width: 48%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.increment {
+  color: $green;
+}
+
+.decrease {
+  color: $red;
+}

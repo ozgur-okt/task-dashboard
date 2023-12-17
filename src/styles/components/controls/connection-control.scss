@@ -1,0 +1,54 @@
+@import '../../theme';
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.connection {
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  cursor: pointer;
+  border: none;
+}
+
+.disabled {
+  background-color: $gray;
+  cursor: not-allowed;
+}
+
+.fetching-state {
+  height: 100%;
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading {
+  display: none;
+  border: 1px dotted $green;
+  padding: 5px;
+  color: $green;
+  font-size: $font-size-large;
+  height: min-content;
+}
+
+.error {
+  display: none;
+  border: 1px dotted $red;
+  padding: 5px;
+  text-align: center;
+  color: $red;
+  font-size: $font-size-large;
+  height: min-content;
+}
+
+.visible {
+  display: block;
+}
