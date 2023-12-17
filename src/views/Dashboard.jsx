@@ -1,3 +1,4 @@
+import React from 'react'
 import ModalActionRequired from '../components/modal/ModalActionRequired'
 import ConnectionControl from '../components/connection-control/ConnectionControl'
 import Charts from '../components/charts/Charts'

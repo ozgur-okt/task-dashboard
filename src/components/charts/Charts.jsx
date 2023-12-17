@@ -1,5 +1,6 @@
-import { useState, useEffect, memo, useCallback } from 'react'
+import React, { useState, useEffect, memo, useCallback } from 'react'
 import { useSelector } from 'react-redux'
+import PropTypes from 'prop-types'
 import { chart, stroke, grid, xAxis, markers, yAxis } from './commonChartOptions.js'
 import { generateChartOptions } from '../../utils/generateChartOptions.js'
 import { keysToLowerCase } from '../../utils/keysToLowerCase.js'
@@ -8,7 +9,6 @@ import Chart from 'react-apexcharts'
 const Charts = ({ name }) => {
   const spectrum = useSelector(state => state.spectrum.spectrum)
   const [current, setCurrent] = useState(generateChartOptions(name, yAxis, chart, stroke, grid, xAxis, markers))
-
 
   const createChartData = useCallback((sensorData) => {
     if (!sensorData) return
@@ -54,6 +54,10 @@ const Charts = ({ name }) => {
       width='100%'
     />
   )
+}
+
+Charts.propTypes = {
+  name: PropTypes.string.isRequired,
 }
 
 export default memo(Charts)

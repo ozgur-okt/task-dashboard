@@ -1,3 +1,4 @@
+import React, { memo } from 'react'
 import { useSelector } from 'react-redux'
 import './status-messages.scss'
 
@@ -21,4 +22,4 @@ const StatusMessages = () => {
   )
 }
 
-export default StatusMessages
+export default memo(StatusMessages)

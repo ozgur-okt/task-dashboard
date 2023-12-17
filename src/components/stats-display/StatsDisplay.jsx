@@ -1,8 +1,11 @@
+import React, { memo } from 'react'
 import { useSelector } from 'react-redux'
+import PropTypes from 'prop-types'
 import { keysToLowerCase } from '../../utils/keysToLowerCase'
 import downArrow from '../../assets/down-arrow.svg'
 import upArrow from '../../assets/up-arrow.svg'
 import './stats-display.scss'
+
 
 const StatsDisplay = ({ name }) => {
   let newStats = useSelector(state => state.spectrum.spectrum)
@@ -40,4 +43,8 @@ const StatsDisplay = ({ name }) => {
   )
 }
 
-export default StatsDisplay
+StatsDisplay.propTypes = {
+  name: PropTypes.string.isRequired,
+}
+
+export default memo(StatsDisplay)

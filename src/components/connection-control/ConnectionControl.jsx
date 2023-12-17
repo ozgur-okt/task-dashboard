@@ -1,3 +1,4 @@
+import React from 'react' 
 import { useDispatch, useSelector } from 'react-redux'
 import { getSpectrumFromRestAPI, getSpectrumFromWebSocket, stopWebSocket } from '../../redux/actions/spectrumActions'
 import play from '../../assets/play.svg'

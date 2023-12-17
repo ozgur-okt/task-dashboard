@@ -1,3 +1,4 @@
+import React from 'react'
 import { useSelector } from 'react-redux'
 import { ReactComponent as Ascending } from '../../assets/ascending.svg'
 import './ascending-signal.scss'
