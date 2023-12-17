@@ -17,7 +17,7 @@ const StatsDisplay = ({ name }) => {
   const unit = name === 'temperature' ? ' °C' : name === 'velocity' ? ' m/s' : ' m'
 
   const renderStats = (statName, unit) => (
-    <div className='stat'>
+    <div className='stats'>
       <h5>{statName.toUpperCase()}</h5>
       <h1 className={increment ? 'increment' : 'decrease'} >
         {current + unit}

@@ -24,10 +24,10 @@ const Dashboard = () => {
           <div className='ascending'>
             <AscendingSignal />
           </div>
-          <div className='stats-monitor'>
-            <StatsDisplay  name={'altitude'} />
-            <StatsDisplay  name={'temperature'} />
-            <StatsDisplay  name={'velocity'} />
+          <div className='stats-display'>
+            <StatsDisplay name={'altitude'} />
+            <StatsDisplay name={'temperature'} />
+            <StatsDisplay name={'velocity'} />
           </div>
           <div className='action'>
             <ActionRequiredSignal />
