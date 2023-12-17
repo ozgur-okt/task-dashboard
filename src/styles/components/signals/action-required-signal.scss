@@ -1,0 +1,24 @@
+@import '../../theme';
+
+.action-required {
+  border-top: $border;
+  border-bottom: $border;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+  font-size: $font-size-large;
+  font-weight: bold;
+  background-color: $green;
+  height: 100%;
+}
+
+@keyframes flash {
+  0% { background-color: $red; }
+  50% { background-color: transparent; }
+  100% { background-color: $red; }
+}
+
+.flash {
+  animation: flash 1s infinite;
+}
