@@ -1,4 +1,4 @@
-import { useState, useEffect, memo } from 'react'
+import { useState, useEffect, memo, useCallback } from 'react'
 import { useSelector } from 'react-redux'
 import { chart, stroke, grid, xAxis, markers, yAxis } from '../../utils/monitors/commonChartOptions.js'
 import { generateChartOptions } from '../../utils/monitors/generateChartOptions.js'
@@ -10,7 +10,7 @@ const Charts = ({ name }) => {
   const [current, setCurrent] = useState(generateChartOptions(name, yAxis, chart, stroke, grid, xAxis, markers))
 
 
-  const createChartData = (sensorData) => {
+  const createChartData = useCallback ((sensorData) => {
     if (!sensorData) return
     
     sensorData = keysToLowerCase(sensorData)
@@ -38,13 +38,12 @@ const Charts = ({ name }) => {
       options: tempOptions,
       series: tempSeries
     })
-  }
+  }, [current.series, current.options, name])
+
   useEffect(() => {
     createChartData(spectrum)
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [spectrum])
+  }, [createChartData, spectrum])
    
-
   return (
     <Chart
       key={Math.random()}

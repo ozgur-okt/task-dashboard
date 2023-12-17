@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux'
 import { keysToLowerCase } from '../../utils/monitors/keysToLowerCase'
-import downArrow from '../../assets/icons/down-arrow.svg'
-import upArrow from '../../assets/icons/up-arrow.svg'
+import downArrow from '../../assets/down-arrow.svg'
+import upArrow from '../../assets/up-arrow.svg'
 import '../../styles/components/monitors/stats-display.scss'
 
 const StatsDisplay = ({ name }) => {
