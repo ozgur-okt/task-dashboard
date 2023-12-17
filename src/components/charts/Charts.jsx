@@ -10,9 +10,9 @@ const Charts = ({ name }) => {
   const [current, setCurrent] = useState(generateChartOptions(name, yAxis, chart, stroke, grid, xAxis, markers))
 
 
-  const createChartData = useCallback ((sensorData) => {
+  const createChartData = useCallback((sensorData) => {
     if (!sensorData) return
-    
+
     sensorData = keysToLowerCase(sensorData)
 
     let yAxisValues = current.series[0].data
@@ -43,7 +43,7 @@ const Charts = ({ name }) => {
   useEffect(() => {
     createChartData(spectrum)
   }, [createChartData, spectrum])
-   
+
   return (
     <Chart
       key={Math.random()}

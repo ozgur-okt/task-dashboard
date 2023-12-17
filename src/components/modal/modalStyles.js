@@ -1,6 +1,6 @@
 export const modalStyles = {
   overlay: {
-    backgroundColor: 'rgba(255, 0, 0, 0.433)',
+    backgroundColor: 'rgba(255, 0, 0, 0.433)',  // red
   },
   content: {
     display: 'flex',

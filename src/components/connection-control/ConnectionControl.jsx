@@ -8,7 +8,7 @@ import './connection-control.scss'
 const ConnectionControl = () => {
   const dispatch = useDispatch()
   let { isSocketConnected, loading, error: connectionError } = useSelector(state => state.spectrum)
- 
+
   return (
     <div className='container'>
       <button className='connection' onClick={() => dispatch(isSocketConnected ? stopWebSocket() : getSpectrumFromWebSocket())}>
