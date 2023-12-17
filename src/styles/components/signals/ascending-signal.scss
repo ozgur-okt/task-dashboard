@@ -1,0 +1,51 @@
+@import '../../theme';
+
+.ascending-state{
+  border-top: $border;
+  border-bottom: $border;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.ascending-arrows {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  overflow: hidden;
+  max-height: 100%;
+  height: 100%;
+}
+
+.label {
+  color: $gray;
+  font-size: $font-size-large;
+}
+
+.active {
+  color: $green;
+  font-size: $font-size-large;
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(50px);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(-100px);
+  }
+}
+
+.ascending-arrow {
+  animation: moveUp 2s linear infinite;
+}
+
+.stable-arrow {
+  fill: $gray;
+}
