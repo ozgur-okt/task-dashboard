@@ -1,6 +1,6 @@
 export const formatStatusMessages = (message, state) => {
   let statusList = [...state.statusMessages]
-  if (statusList.length > 5) statusList.pop()
+  if (statusList.length > 15) statusList.pop()
   const timestampedMessage = {
     message: state.spectrum ? message : null,
     timestamp: state.spectrum ? new Date().toLocaleTimeString() : null
