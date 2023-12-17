@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux'
 import { ReactComponent as Ascending } from '../../assets/ascending.svg'
-import '../../styles/components/signals/ascending-signal.scss'
+import './ascending-signal.scss'
 
 const AscendingSignal = () => {
   const isAscending = useSelector(state => state.spectrum.isAscending)

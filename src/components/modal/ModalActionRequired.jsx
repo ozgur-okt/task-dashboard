@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { modalStyles } from '../../utils/modals/modalStyles'
+import { modalStyles } from './modalStyles'
 import { actOnSpectrum } from '../../redux/actions/spectrumActions'
 import Modal from 'react-modal'
-import '../../styles/components/modals/modal-action-required.scss'
+import './modal-action-required.scss'
 
 const ModalActionRequired = () => {
   const dispacth = useDispatch()

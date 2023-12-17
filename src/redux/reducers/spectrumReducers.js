@@ -1,4 +1,4 @@
-import { formatStatusMessages } from '../../utils/monitors/formatStatusMessages'
+import { formatStatusMessages } from '../../utils/formatStatusMessages'
 import {
   ERROR,
   GET_SPECTRUM_FROM_REST_API,

@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux'
-import '../../styles/components/monitors/status-messages.scss'
+import './status-messages.scss'
 
 const StatusMessages = () => {
   const { isActionRequired, statusMessages } = useSelector(state => state.spectrum)

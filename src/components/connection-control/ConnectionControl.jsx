@@ -3,7 +3,7 @@ import { getSpectrumFromRestAPI, getSpectrumFromWebSocket, stopWebSocket } from 
 import play from '../../assets/play.svg'
 import stop from '../../assets/stop.svg'
 import refresh from '../../assets/refresh.svg'
-import '../../styles/components/controls/connection-control.scss'
+import './connection-control.scss'
 
 const ConnectionControl = () => {
   const dispatch = useDispatch()

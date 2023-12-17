@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux'
-import '../../styles/components/signals/action-required-signal.scss'
+import './action-required-signal.scss'
 
 const ActionRequiredSignal = () => {
   const isActionRequired = useSelector(state => state.spectrum.isActionRequired)

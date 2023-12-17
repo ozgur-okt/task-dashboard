@@ -1,11 +1,11 @@
-import ModalActionRequired from '../components/modals/ModalActionRequired'
-import ConnectionControl from '../components/controls/ConnectionControl'
-import Charts from '../components/monitors/Charts'
-import StatsDisplay from '../components/monitors/StatsDisplay'
-import StatusMessages from '../components/monitors/StatusMessages'
-import AscendingSignal from '../components/signals/AscendingSignal'
-import ActionRequiredSignal from '../components/signals/ActionRequiredSignal'
-import '../styles/views/dashboard.scss'
+import ModalActionRequired from '../components/modal/ModalActionRequired'
+import ConnectionControl from '../components/connection-control/ConnectionControl'
+import Charts from '../components/charts/Charts'
+import StatsDisplay from '../components/stats-display/StatsDisplay'
+import StatusMessages from '../components/status-messages/StatusMessages'
+import AscendingSignal from '../components/ascending-signal/AscendingSignal'
+import ActionRequiredSignal from '../components/action-required-signal/ActionRequiredSignal'
+import './dashboard.scss'
 
 const Dashboard = () => {
   return (

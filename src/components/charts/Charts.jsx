@@ -1,8 +1,8 @@
 import { useState, useEffect, memo, useCallback } from 'react'
 import { useSelector } from 'react-redux'
-import { chart, stroke, grid, xAxis, markers, yAxis } from '../../utils/monitors/commonChartOptions.js'
-import { generateChartOptions } from '../../utils/monitors/generateChartOptions.js'
-import { keysToLowerCase } from '../../utils/monitors/keysToLowerCase.js'
+import { chart, stroke, grid, xAxis, markers, yAxis } from './commonChartOptions.js'
+import { generateChartOptions } from '../../utils/generateChartOptions.js'
+import { keysToLowerCase } from '../../utils/keysToLowerCase.js'
 import Chart from 'react-apexcharts'
 
 const Charts = ({ name }) => {
