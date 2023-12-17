@@ -4,7 +4,7 @@ import Dashboard from './views/Dashboard'
 const App = () => {
   return (
     <>
-     <Dashboard />
+      <Dashboard />
     </>
   )
 }
