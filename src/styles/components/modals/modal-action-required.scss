@@ -1,0 +1,17 @@
+@import '../../theme';
+
+.modal-title {
+  color: $red;
+}
+
+.modal-button {
+  border: none;
+  height: 3rem;
+  width: 15rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: $red;
+  color: rgba(255, 255, 255, 0.672);
+  border-radius: 3px;
+  cursor: pointer;
+}
