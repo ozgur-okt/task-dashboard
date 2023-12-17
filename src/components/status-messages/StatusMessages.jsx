@@ -11,7 +11,7 @@ const StatusMessages = () => {
         Array.isArray(statusMessages) && statusMessages.map((item, index) => (
           <div
             key={index}
-            className={index === 0 ? (isActionRequired ? 'message action' : 'message normal') : 'message small'}
+            className={index === 0 ? (isActionRequired ? 'message critical' : 'message normal') : 'message small'}
           >
             <p className='text' >{item.message}</p>
             <p className='text'>{item.timestamp}</p>

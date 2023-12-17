@@ -22,12 +22,12 @@ const StatsDisplay = ({ name }) => {
   const renderStats = (statName, unit) => (
     <div className='stats'>
       <h5>{statName.toUpperCase()}</h5>
-      <h1 className={increment ? 'increment' : 'decrease'} >
+      <h1 className={increment ? 'increment' : 'decrement'}>
         {current + unit}
       </h1>
       {
         newStats && previousStats && newStats[statName] && previousStats[statName] && (
-          <p className={increment ? 'change increment' : 'change decrease'}>
+          <p className={increment ? 'change increment' : 'change decrement'}>
             <img src={increment ? upArrow : downArrow} alt={increment ? 'upArrow' : 'downArrow'} />
             {percentage + ' %'}
           </p>
