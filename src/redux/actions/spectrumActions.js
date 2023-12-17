@@ -74,6 +74,7 @@ export const actOnSpectrum = () => {
         })
       })
       .catch((error) => {
+        console.log('Error from ActOnSpectrum endpoint', error)
         //Due to assignment was not clear, post request to this endpoint always causes error.
         //dispatch({ type: 'ERROR', payload: error })
       })
