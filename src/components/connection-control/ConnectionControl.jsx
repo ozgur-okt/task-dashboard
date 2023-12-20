@@ -13,14 +13,14 @@ const ConnectionControl = () => {
   return (
     <div className='container'>
       <button className='connection' onClick={() => dispatch(isSocketConnected ? stopWebSocket() : getSpectrumFromWebSocket())}>
-        <img src={isSocketConnected ? stop : play} alt={isSocketConnected ? 'stop' : 'play'} />
+        <img className='btnIcon' src={isSocketConnected ? stop : play} alt={isSocketConnected ? 'stop' : 'play'} />
       </button>
       <div className='fetching-state'>
         <h3 className={connectionError ? 'error visible' : 'error'}>ERROR</h3>
         <h3 className={loading ? 'loading visible' : 'loading'}>LOADING</h3>
       </div>
       <button className={isSocketConnected ? 'connection disabled' : 'connection'} disabled={isSocketConnected} onClick={() => dispatch(getSpectrumFromRestAPI())}>
-        <img src={refresh} alt='refresh' />
+        <img className='btnIcon' src={refresh} alt='refresh' />
       </button>
     </div>
   )

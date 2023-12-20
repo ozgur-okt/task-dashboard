@@ -52,3 +52,16 @@
 .visible {
   display: block;
 }
+
+@media screen and (max-width: 768px) {
+  .connection {
+    width: 30%;
+    border-radius: 0;
+    height: 100%;
+  }
+  
+  .btnIcon {
+    width: 3rem;
+    height: 3rem;
+  }
+}

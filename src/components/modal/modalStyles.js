@@ -12,5 +12,6 @@ export const modalStyles = {
     margin: 'auto',
     border: 'none',
     backgroundColor: 'gray',
+    overflow: 'hidden',
   }
 }
